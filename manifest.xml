@@ -1,0 +1,15 @@
+<package>
+  <description brief="%SUBMODEL_NAME%">
+
+     %SUBMODEL_NAME%
+
+  </description>
+  <author>%USER_NAME%</author>
+  <license>LGPLv2.1 / BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>none</url>
+  <depend package="roscpp" />
+  <depend package="std_msgs" />
+</package>
+
+

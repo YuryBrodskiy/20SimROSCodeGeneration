@@ -1,0 +1,27 @@
+20-Sim provides a C++ Code Generator which can automatically convert a complete 20-Sim model or submodel into C++ code.
+The template in this repository will generate code for the ROS framework.
+
+= INSTALL =
+To install the template copy the contents of this git repository into the Ccode folder:
+ cd %PATH_TO_20_SIM%/Ccode
+ git clone https://YuryBrodskiy@github.com/YuryBrodskiy/20SimROSCodeGeneration.git
+
+= USAGE = 
+To use the code generation feature in 20-Sim go to 'Model->Start Simulator' to open a new simulator window. Then from the simulator window go to menu 'Tools-> Real Time Toolbox -> C-Code Generation' to display a window with list of templates. Choose ROS node.
+
+Re-mapping node and topic names (input/output) is described here:
+* http://www.ros.org/wiki/Remapping%20Arguments - for command line startup
+* http://www.ros.org/wiki/roslaunch/XML - for launch files, see Section "6.2 A more complicated example"
+
+= ADVANCED FEATURES = 
+An important feature of the generated node is the possibility to influence the configuration parameters and communication ports after the code was generated.
+
+The configuration of the created node is described in the config/%SUBMODEL_NAME%_config.xxsim XML file created at the moment of code generation.
+The XML configuration file contains the following:
++ Initial values required to correctly start computation
+	- Initial state of the node
+	- Configuration of the computation
++ Description of the component interface
+	- Input/Output ports -> Data flow communication
+	- Configuration properties -> Runtime introspection, runtime changes of configuration
++ Other information about the computation model, e.g.  physical quantities (not in use at the moment) 
