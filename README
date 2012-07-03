@@ -25,3 +25,12 @@ The XML configuration file contains the following:
 	- Input/Output ports -> Data flow communication
 	- Configuration properties -> Runtime introspection, runtime changes of configuration
 + Other information about the computation model, e.g.  physical quantities (not in use at the moment) 
+
+Please note, the ROS parameter server is currently not supported, because it might be unreliable in case of intermittent connection problems between your node and the master.
+
+= CONTACT = 
+r.j.w.wilterdink [at] utwente.nl
+y.brodskiy [at] utwente.nl
+
+= ACKNOWLEDGEMENTS =
+The research leading to these results has received funding from the European Community's Seventh Framework Programme (FP7/2007-2013) under grant agreement no. FP7-ICT-231940-BRICS (Best Practice in Robotics).
