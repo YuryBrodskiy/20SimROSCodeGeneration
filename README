@@ -6,7 +6,7 @@ To install the template copy the contents of this git repository into the Ccode 
  cd %PATH_TO_20_SIM%/Ccode
  git clone https://YuryBrodskiy@github.com/YuryBrodskiy/20SimROSCodeGeneration.git
 
-Please use 20-Sim version > 4.1.2.4
+Please use 20-Sim version >= 4.1.2.4
 
 = USAGE = 
 To use the code generation feature in 20-Sim go to 'Model->Start Simulator' to open a new simulator window. Then from the simulator window go to menu 'Tools-> Real Time Toolbox -> C-Code Generation' to display a window with list of templates. Choose ROS node.
